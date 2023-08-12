@@ -12,7 +12,7 @@ import MergeProjections from "./pages/merge-projections/MergeProjections";
 import RetrainingExM from "./pages/retraining-extraction-model/RetrainingExM";
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Shoreline-GAN">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
