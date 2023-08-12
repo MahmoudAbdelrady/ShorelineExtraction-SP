@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header">
       <Link to="/" className="h-link">
-        <img src="/images/satellite.png" alt="Logo" />
+        <img src="../../../public/images/satellite.png" alt="Logo" />
         <span className="title">Shoreline GAN</span>
       </Link>
     </div>

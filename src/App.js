@@ -15,19 +15,37 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/download-imagery" element={<DownloadImagery />} />
-        <Route path="/shoreline-extraction" element={<ShorelineExtraction />} />
-        <Route path="/make-transects" element={<MakeTransects />} />
-        <Route path="/make-timeseries" element={<MakeTimeseries />} />
+        <Route path="/Shoreline-GAN" element={<Home />} />
         <Route
-          path="/get-linear-trend-shapefile"
+          path="/Shoreline-GAN/download-imagery"
+          element={<DownloadImagery />}
+        />
+        <Route
+          path="/Shoreline-GAN/shoreline-extraction"
+          element={<ShorelineExtraction />}
+        />
+        <Route
+          path="/Shoreline-GAN/make-transects"
+          element={<MakeTransects />}
+        />
+        <Route
+          path="/Shoreline-GAN/make-timeseries"
+          element={<MakeTimeseries />}
+        />
+        <Route
+          path="/Shoreline-GAN/get-linear-trend-shapefile"
           element={<GetLinearTrendShapefile />}
         />
-        <Route path="/project-timeseries" element={<ProjectTimeseries />} />
-        <Route path="/merge-projections" element={<MergeProjections />} />
         <Route
-          path="/retraining-extraction-model"
+          path="/Shoreline-GAN/project-timeseries"
+          element={<ProjectTimeseries />}
+        />
+        <Route
+          path="/Shoreline-GAN/merge-projections"
+          element={<MergeProjections />}
+        />
+        <Route
+          path="/Shoreline-GAN/retraining-extraction-model"
           element={<RetrainingExM />}
         />
       </Routes>
