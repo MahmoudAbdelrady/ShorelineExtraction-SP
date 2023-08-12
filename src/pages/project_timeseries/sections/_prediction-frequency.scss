@@ -1,0 +1,32 @@
+@use "../../../scss/variables/colors" as *;
+
+@mixin predictionFrequency {
+  .pr-freq {
+    display: flex;
+    align-items: center;
+    @media (max-width: 420px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    @media (max-width: 768px) {
+      margin-top: 30px;
+    }
+    span {
+      font-size: 18px;
+      user-select: none;
+      color: $blueColor;
+      margin-right: 10px;
+      text-align: center;
+      @media (max-width: 420px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    select {
+      padding: 5px;
+      border: none;
+      background-color: $lightGreyColor;
+      border-radius: 10px;
+    }
+  }
+}

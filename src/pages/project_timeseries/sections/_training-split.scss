@@ -1,0 +1,21 @@
+@use "../../../scss/variables/colors" as *;
+
+@mixin trainingSplit {
+  .training-split {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 420px) {
+      flex-direction: column;
+    }
+    label {
+      @media (max-width: 420px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    input {
+      width: 240px;
+    }
+  }
+}

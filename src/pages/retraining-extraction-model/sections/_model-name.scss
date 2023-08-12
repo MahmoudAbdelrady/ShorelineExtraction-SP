@@ -1,0 +1,18 @@
+@use "../../../scss/variables/colors" as *;
+
+@mixin modelName {
+  .mname {
+    @media (max-width: 420px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    label {
+      @media (max-width: 420px) {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

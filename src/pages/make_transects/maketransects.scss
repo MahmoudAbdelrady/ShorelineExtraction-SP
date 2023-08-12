@@ -1,0 +1,13 @@
+@use "../../scss/variables/colors" as *;
+@use "./sections/als-csl" as *;
+@use "./sections/shpfile" as *;
+
+.make-transects {
+  min-height: calc(100vh - 150px);
+  form {
+    margin-top: 70px;
+    margin-bottom: 25px;
+    @include alsCSL;
+    @include shapeFile;
+  }
+}

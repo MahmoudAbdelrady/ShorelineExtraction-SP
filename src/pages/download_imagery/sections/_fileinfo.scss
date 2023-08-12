@@ -1,0 +1,54 @@
+@use "../../../scss/variables/colors" as *;
+@mixin fileInfo {
+  .file-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      width: fit-content;
+      margin-bottom: 15px;
+      padding: 10px 30px;
+      background-color: $orangeColor;
+      border-radius: 5px;
+      user-select: none;
+    }
+    .fn-chk {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+      }
+    }
+    .fconfig {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 20px;
+      column-gap: 50px;
+      .shs-box,
+      .she-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        label {
+          margin-right: 0;
+          margin-bottom: 5px;
+        }
+        input {
+          margin-right: 15px;
+          &[type="number"] {
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

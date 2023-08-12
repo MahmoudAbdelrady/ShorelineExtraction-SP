@@ -1,0 +1,225 @@
+.downloadimagery {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 150px);
+}
+@media (max-width: 768px) {
+  .downloadimagery {
+    min-height: calc(100vh - 220px);
+  }
+}
+.downloadimagery form {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(415px, 1fr));
+  gap: 40px;
+}
+@media (min-width: 1400px) {
+  .downloadimagery form {
+    margin-bottom: 25px;
+  }
+}
+.downloadimagery form .file-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downloadimagery form .file-info h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 15px;
+  padding: 10px 30px;
+  background-color: #ff9800;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.downloadimagery form .file-info .fn-chk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.downloadimagery form .file-info .fn-chk .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+.downloadimagery form .file-info .fconfig {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+}
+.downloadimagery form .file-info .fconfig .shs-box,
+.downloadimagery form .file-info .fconfig .she-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.downloadimagery form .file-info .fconfig .shs-box label,
+.downloadimagery form .file-info .fconfig .she-box label {
+  margin-right: 0;
+  margin-bottom: 5px;
+}
+.downloadimagery form .file-info .fconfig .shs-box input,
+.downloadimagery form .file-info .fconfig .she-box input {
+  margin-right: 15px;
+}
+.downloadimagery form .file-info .fconfig .shs-box input[type=number],
+.downloadimagery form .file-info .fconfig .she-box input[type=number] {
+  width: 100px;
+}
+.downloadimagery form .timeseries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.downloadimagery form .timeseries h3 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  background-color: #ff9800;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.downloadimagery form .timeseries .dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.downloadimagery form .timeseries .dates .bgd-box,
+.downloadimagery form .timeseries .dates .end-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.downloadimagery form .timeseries .dates .bgd-box label,
+.downloadimagery form .timeseries .dates .end-box label {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+.downloadimagery form .timeseries .dates .bgd-box input:not(:last-of-type),
+.downloadimagery form .timeseries .dates .end-box input:not(:last-of-type) {
+  margin-right: 20px;
+}
+.downloadimagery form .long,
+.downloadimagery form .lat {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.downloadimagery form .long h3,
+.downloadimagery form .lat h3 {
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  background-color: #ff9800;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.downloadimagery form .long .upper,
+.downloadimagery form .lat .upper {
+  margin-bottom: 15px;
+}
+.downloadimagery form .long .upper,
+.downloadimagery form .long .lower,
+.downloadimagery form .lat .upper,
+.downloadimagery form .lat .lower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.downloadimagery form .long .upper .box,
+.downloadimagery form .long .lower .box,
+.downloadimagery form .lat .upper .box,
+.downloadimagery form .lat .lower .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media (max-width: 420px) {
+  .downloadimagery form .long .upper .box:nth-of-type(even),
+  .downloadimagery form .long .lower .box:nth-of-type(even),
+  .downloadimagery form .lat .upper .box:nth-of-type(even),
+  .downloadimagery form .lat .lower .box:nth-of-type(even) {
+    margin-right: 8px;
+  }
+}
+.downloadimagery form .long .upper .box label,
+.downloadimagery form .long .lower .box label,
+.downloadimagery form .lat .upper .box label,
+.downloadimagery form .lat .lower .box label {
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+.downloadimagery form .long .upper .box input,
+.downloadimagery form .long .lower .box input,
+.downloadimagery form .lat .upper .box input,
+.downloadimagery form .lat .lower .box input {
+  padding: 7px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.downloadimagery form .satellites {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.downloadimagery form .satellites h3 {
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  background-color: #ff9800;
+  border-radius: 5px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+@media (min-width: 1400px) {
+  .downloadimagery form .satellites h3 {
+    margin-bottom: 25px;
+  }
+}
+.downloadimagery form .satellites .checkboxes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (min-width: 1400px) {
+  .downloadimagery form .satellites .checkboxes .box {
+    text-align: center;
+  }
+}
+@media (max-width: 468px) {
+  .downloadimagery form .satellites .checkboxes .box {
+    text-align: center;
+  }
+}
+.downloadimagery form .satellites .checkboxes .box label {
+  margin-right: 5px;
+}
+.downloadimagery form .f-btn {
+  margin: 60px;
+}/*# sourceMappingURL=downloadimagery.css.map */

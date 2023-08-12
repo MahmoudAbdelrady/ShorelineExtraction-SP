@@ -1,0 +1,88 @@
+@use "../../scss/variables/colors" as *;
+
+.sidebar {
+  position: fixed;
+  height: fit-content;
+  width: 250px;
+  z-index: 1000;
+  top: 30px;
+  background-color: $cyanColor;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.3s;
+  &.false {
+    left: -250px;
+  }
+  &.true {
+    left: 0;
+  }
+  .toggle-sidebar {
+    position: absolute;
+    right: -32px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $yellowColor;
+    text-align: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    user-select: none;
+    cursor: pointer;
+    i {
+      padding: 5px;
+      font-size: 22px;
+    }
+  }
+  .sb-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .sb-header {
+      font-size: 25px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: $orangeColor;
+      border-radius: 10px;
+      padding: 5px 20px;
+      user-select: none;
+    }
+    .content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .sh-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 14px 0;
+        user-select: none;
+        width: 100%;
+        transition: 0.3s;
+        &.active {
+          background-color: $lightGreyColor;
+          padding: 10px;
+          border-radius: 10px;
+        }
+        &:hover:not(.active) {
+          background-color: rgba($yellowColor, 0.5);
+          padding: 10px;
+          border-radius: 10px;
+        }
+        &:last-of-type {
+          margin-bottom: 20px;
+        }
+        i {
+          margin-right: 8px;
+          font-size: 17px;
+          color: #004d40;
+        }
+        span {
+          font-size: 18px;
+          text-align: center;
+          color: #004d40;
+        }
+      }
+    }
+  }
+}

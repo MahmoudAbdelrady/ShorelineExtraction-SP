@@ -1,0 +1,39 @@
+@use "../../scss/variables/colors" as *;
+@use "./sections/sitename" as *;
+@use "./sections/second-third" as *;
+@use "./sections/training-split" as *;
+@use "./sections/prediction-frequency" as *;
+
+.project-timeseries {
+  min-height: calc(100vh - 150px);
+  form {
+    margin-top: 50px;
+    @include siteName;
+    @include second-third;
+    .last {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-top: 40px;
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+      @include trainingSplit;
+      @include predictionFrequency;
+    }
+    .f-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 45px;
+      @media (max-width: 768px) {
+        margin-top: 40px;
+        margin-bottom: 35px;
+      }
+      button {
+        font-size: 18px;
+        padding: 10px 40px;
+      }
+    }
+  }
+}

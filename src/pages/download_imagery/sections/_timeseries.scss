@@ -1,0 +1,39 @@
+@use "../../../scss/variables/colors" as *;
+@mixin timeSeries {
+  .timeseries {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3 {
+      width: fit-content;
+      margin-bottom: 20px;
+      padding: 10px 30px;
+      background-color: $orangeColor;
+      border-radius: 5px;
+      user-select: none;
+    }
+    .dates {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 60px;
+      .bgd-box,
+      .end-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        label {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+        input {
+          &:not(:last-of-type) {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}

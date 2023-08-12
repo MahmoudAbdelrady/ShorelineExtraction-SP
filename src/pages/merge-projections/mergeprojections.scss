@@ -1,0 +1,25 @@
+@use "../../scss/variables/colors" as *;
+@use "./sections/first" as *;
+@use "./sections/trans-id" as *;
+@use "./sections/ep-code" as *;
+
+.merge-projections {
+  min-height: calc(100vh - 150px);
+  form {
+    margin-top: 70px;
+    @include first;
+    @include transectID;
+    @include epsgCode;
+    .f-btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      button {
+        font-size: 18px;
+        padding: 10px 40px;
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.make-transects {
+  min-height: calc(100vh - 150px);
+}
+.make-transects form {
+  margin-top: 70px;
+  margin-bottom: 25px;
+}
+.make-transects form .alongshore-spacing,
+.make-transects form .cross-shore-length {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 520px) {
+  .make-transects form .alongshore-spacing,
+  .make-transects form .cross-shore-length {
+    flex-direction: column;
+  }
+}
+@media (max-width: 520px) {
+  .make-transects form .alongshore-spacing label,
+  .make-transects form .cross-shore-length label {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+}
+.make-transects form .alongshore-spacing input,
+.make-transects form .cross-shore-length input {
+  width: 230px;
+}
+.make-transects form .shoreline-shapefile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 520px) {
+  .make-transects form .shoreline-shapefile {
+    flex-direction: column;
+  }
+}
+.make-transects form .shoreline-shapefile .ss-title {
+  font-size: 18px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #1e88e5;
+  margin-right: 9px;
+}
+@media (max-width: 520px) {
+  .make-transects form .shoreline-shapefile .ss-title {
+    margin-right: 0;
+    margin-bottom: 9px;
+  }
+}
+.make-transects form .shoreline-shapefile label {
+  padding: 10px;
+  background-color: #ffde03;
+  border-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.make-transects form .shoreline-shapefile label::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 0;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #ffc000;
+  transition: 0.3s;
+  z-index: 1;
+}
+.make-transects form .shoreline-shapefile label:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.make-transects form .shoreline-shapefile label i {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}
+.make-transects form .shoreline-shapefile label span {
+  position: relative;
+  z-index: 2;
+  font-size: 18px;
+}/*# sourceMappingURL=maketransects.css.map */

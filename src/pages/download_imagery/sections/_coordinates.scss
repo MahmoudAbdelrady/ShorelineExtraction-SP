@@ -1,0 +1,45 @@
+@use "../../../scss/variables/colors" as *;
+@mixin coordinates {
+  .long,
+  .lat {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      margin-bottom: 20px;
+      padding: 10px 30px;
+      background-color: $orangeColor;
+      border-radius: 5px;
+      user-select: none;
+    }
+    .upper {
+      margin-bottom: 15px;
+    }
+    .upper,
+    .lower {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 60px;
+      .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        @media (max-width: 420px) {
+          &:nth-of-type(even) {
+            margin-right: 8px;
+          }
+        }
+        label {
+          margin-right: 0;
+          margin-bottom: 8px;
+        }
+        input {
+          padding: 7px;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}

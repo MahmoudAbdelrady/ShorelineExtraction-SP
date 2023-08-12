@@ -1,0 +1,93 @@
+.sidebar {
+  position: fixed;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 250px;
+  z-index: 1000;
+  top: 30px;
+  background-color: #90caf9;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  transition: 0.3s;
+}
+.sidebar.false {
+  left: -250px;
+}
+.sidebar.true {
+  left: 0;
+}
+.sidebar .toggle-sidebar {
+  position: absolute;
+  right: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffde03;
+  text-align: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.sidebar .toggle-sidebar i {
+  padding: 5px;
+  font-size: 22px;
+}
+.sidebar .sb-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar .sb-container .sb-header {
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #ff9800;
+  border-radius: 10px;
+  padding: 5px 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.sidebar .sb-container .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sidebar .sb-container .content .sh-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 14px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  width: 100%;
+  transition: 0.3s;
+}
+.sidebar .sb-container .content .sh-item.active {
+  background-color: #eeeeee;
+  padding: 10px;
+  border-radius: 10px;
+}
+.sidebar .sb-container .content .sh-item:hover:not(.active) {
+  background-color: rgba(255, 222, 3, 0.5);
+  padding: 10px;
+  border-radius: 10px;
+}
+.sidebar .sb-container .content .sh-item:last-of-type {
+  margin-bottom: 20px;
+}
+.sidebar .sb-container .content .sh-item i {
+  margin-right: 8px;
+  font-size: 17px;
+  color: #004d40;
+}
+.sidebar .sb-container .content .sh-item span {
+  font-size: 18px;
+  text-align: center;
+  color: #004d40;
+}/*# sourceMappingURL=sidebar.css.map */

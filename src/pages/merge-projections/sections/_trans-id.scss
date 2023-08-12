@@ -1,0 +1,34 @@
+@use "../../../scss/variables/colors" as *;
+
+@mixin transectID {
+  .trans-id {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    @media (max-width: 520px) {
+      margin-top: 30px;
+    }
+    @media (max-width: 420px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+    .t-box {
+      @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      @media (max-width: 420px) {
+        margin-bottom: 25px;
+      }
+      label {
+        @media (max-width: 420px) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

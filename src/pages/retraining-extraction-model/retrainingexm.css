@@ -1,0 +1,105 @@
+.retraining-exm {
+  min-height: calc(100vh - 150px);
+}
+.retraining-exm form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 420px) {
+  .retraining-exm form .mname {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .retraining-exm form .mname label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.retraining-exm form .epochs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .retraining-exm form .epochs {
+    flex-direction: column;
+  }
+}
+.retraining-exm form .epochs .ep-box {
+  margin-top: 30px;
+}
+@media (max-width: 420px) {
+  .retraining-exm form .epochs .ep-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .retraining-exm form .epochs .ep-box label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.retraining-exm form .epochs .ep-box:not(:last-of-type) {
+  margin-right: 60px;
+}
+@media (max-width: 768px) {
+  .retraining-exm form .epochs .ep-box:not(:last-of-type) {
+    margin-right: 0;
+  }
+}
+.retraining-exm form .con-train {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .retraining-exm form .con-train {
+    flex-direction: column;
+  }
+}
+.retraining-exm form .con-train .ct-box {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+@media (max-width: 420px) {
+  .retraining-exm form .con-train .ct-box {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 420px) {
+  .retraining-exm form .con-train .ct-box label {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+.retraining-exm form .con-train .ct-box input[type=text] {
+  width: 200px;
+}
+.retraining-exm form .con-train .ct-box:not(:last-of-type) {
+  margin-right: 60px;
+}
+@media (max-width: 768px) {
+  .retraining-exm form .con-train .ct-box:not(:last-of-type) {
+    margin-right: 0;
+  }
+}
+.retraining-exm form .f-btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.retraining-exm form .f-btn button {
+  font-size: 18px;
+  padding: 10px 40px;
+}/*# sourceMappingURL=retrainingexm.css.map */

@@ -1,0 +1,37 @@
+@use "../../../scss/variables/colors" as *;
+
+@mixin first {
+  .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 520px) {
+      flex-direction: column;
+    }
+    .f-box {
+      text-align: center;
+      @media (max-width: 520px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      &:not(:last-of-type) {
+        margin-right: 100px;
+        @media (max-width: 768px) {
+          margin-right: 50px;
+        }
+        @media (max-width: 520px) {
+          margin-right: 0;
+          margin-bottom: 25px;
+        }
+      }
+      label {
+        @media (max-width: 520px) {
+          margin-right: 0;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
