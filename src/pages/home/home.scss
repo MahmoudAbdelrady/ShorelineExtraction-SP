@@ -1,41 +1,7 @@
+@use "../../scss/variables/colors" as *;
+
 .home {
-  padding-top: 100px;
-  padding-bottom: 140px;
   min-height: calc(100vh - 150px);
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 40px;
-  @media (max-width: 768px) {
-    min-height: calc(100vh - 220px);
-  }
-  .sh-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #90caf9;
-    width: fit-content;
-    margin: 0 auto;
-    padding: 25px;
-    border-radius: 10px;
-    user-select: none;
-    transition: 0.3s;
-    &:hover {
-      transform: translateY(-10px);
-      background-color: #212121;
-      .shi-title {
-        color: #90caf9;
-      }
-    }
-    .shi-icon {
-      margin-right: 10px;
-      font-size: 25px;
-      color: #ff9800;
-    }
-    .shi-title {
-      font-size: 20px;
-      color: #212121;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-  }
+  background-color: #f1f5f9;
+  display: flex;
 }

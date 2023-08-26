@@ -1,0 +1,11 @@
+@use "../../scss/mixins/sidesection" as *;
+
+@include sideSection(rexm, rexm-info, rexm-items);
+
+.rexm-items {
+  .input-field {
+    &:nth-child(2) {
+      gap: 43px;
+    }
+  }
+}

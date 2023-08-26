@@ -1,46 +1,39 @@
+import GoogleMap from "../../components/Google-Map/GoogleMap";
+import Header from "../../components/Header/Header";
 import InputField from "../../components/InputField/InputField";
-import SectionTitle from "../../components/SectionTitle/SectionTitle";
-import Sidebar from "../../components/Sidebar/Sidebar";
-import "./mergeprojections.css";
+import SubmitButton from "../../components/SubmitButton/SubmitButton";
+import TopSidebar from "../../components/TopSidebar/TopSidebar";
+import "./merge-projections.css";
 
 const MergeProjections = () => {
   return (
     <>
-      <Sidebar current={"mp"} />
-      <div className="merge-projections container">
-        <SectionTitle title={"Merge Projections"} icon={"bi bi-intersect"} />
-        <form>
-          <div className="first">
-            <div className="f-box">
-              <InputField labelText={"Site Name"} inputType={"text"} />
-            </div>
-            <div className="f-box">
-              <InputField
-                labelText={"Switch Transect Direction"}
-                inputType={"checkbox"}
-              />
-            </div>
-          </div>
-          <div className="trans-id">
-            <div className="t-box">
-              <InputField
-                labelText={"Start Transect ID"}
-                inputType={"number"}
-              />
-            </div>
-            <div className="t-box">
-              <InputField labelText={"End Transect ID"} inputType={"number"} />
-            </div>
-          </div>
-          <div className="ep-code">
-            <InputField labelText={"EPSG Code"} inputType={"text"} />
-          </div>
-          <div className="f-btn">
-            <button className="btn btn-success" type="submit">
-              Run
-            </button>
-          </div>
-        </form>
+      <Header />
+      <div className="merge-projections">
+        <div className="mp-info">
+          <TopSidebar idx={7} />
+          <form className="mp-items">
+            <InputField title={"Site Name:"} id={"mp-sn"} type={"text"} />
+            <InputField
+              title={"Switch Transect Direction:"}
+              id={"mp-std"}
+              type={"checkbox"}
+            />
+            <InputField
+              title={"Start Transect ID:"}
+              id={"mp-stid"}
+              type={"number"}
+            />
+            <InputField
+              title={"End Transect ID:"}
+              id={"mp-etid"}
+              type={"number"}
+            />
+            <InputField title={"EPSG Code:"} id={"mp-epc"} type={"text"} />
+            <SubmitButton title={"Run"} />
+          </form>
+        </div>
+        <GoogleMap />
       </div>
     </>
   );

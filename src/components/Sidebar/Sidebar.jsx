@@ -2,106 +2,99 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import "./sidebar.css";
 
-const Sidebar = ({ current }) => {
-  var [sideBar, setSideBar] = useState(false);
+const Sidebar = ({ idx }) => {
+  var [sideBar, setSideBar] = useState(true);
   return (
     <div className={`sidebar ${sideBar}`}>
-      <div
+      <i
         onClick={() => setSideBar((prev) => !prev)}
-        className="toggle-sidebar"
-      >
-        <i
-          className={`${
-            sideBar ? "bi bi-caret-left-fill" : "bi bi-caret-right-fill"
-          }`}
-        ></i>
+        className="bi bi-caret-right-fill open-icn"
+      ></i>
+      <i
+        onClick={() => setSideBar((prev) => !prev)}
+        class="bi bi-caret-left-fill close-icn"
+      ></i>
+      <div className="nsbh">
+        <img src="./images/satellite.png" alt="Logo" />
+        <h3>Menu</h3>
       </div>
-      <div className="sb-container">
-        <div className="sb-header">
-          <span>Menu</span>
-        </div>
-        <div className="content">
+      <ul className="links">
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "home" ? "active" : ""}`}
-            to="/"
-          >
-            <i className="bi bi-house-fill shi-icon"></i>
-            <span>Home</span>
-          </Link>
-          <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "di" ? "active" : ""}`}
+            className={`sb-link ${idx === 0 ? "active" : ""}`}
             to="/download-imagery"
           >
-            <i className="bi bi-box-arrow-down shi-icon"></i>
-            <span className="shi-title">Download Imagery</span>
+            <i className="bi bi-box-arrow-down sb-icn"></i>
+            <span>Download Imagery</span>
           </Link>
-          <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "pi" ? "active" : ""}`}
-          >
-            <i className="bi bi-images shi-icon"></i>
-            <span className="shi-title">Preprocess Images</span>
+        </li>
+        <li>
+          <Link className={`sb-link ${idx === 1 ? "active" : ""}`} to="/">
+            <i className="bi bi-images sb-icn"></i>
+            <span>Preprocess Images</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "se" ? "active" : ""}`}
+            className={`sb-link ${idx === 2 ? "active" : ""}`}
             to="/shoreline-extraction"
           >
-            <i className="bi bi-bezier2 shi-icon"></i>
-            <span className="shi-title">Shoreline Extraction</span>
+            <i className="bi bi-bezier2 sb-icn"></i>
+            <span>Shoreline Extraction</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "mt" ? "active" : ""}`}
+            className={`sb-link ${idx === 3 ? "active" : ""}`}
             to="/make-transects"
           >
-            <i className="bi bi-alt shi-icon"></i>
-            <span className="shi-title">Make Transects</span>
+            <i className="bi bi-alt sb-icn"></i>
+            <span>Make Transects</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "mti" ? "active" : ""}`}
+            className={`sb-link ${idx === 4 ? "active" : ""}`}
             to="/make-timeseries"
           >
-            <i className="bi bi-calendar4-range shi-icon"></i>
-            <span className="shi-title">Make Timeseries</span>
+            <i className="bi bi-calendar4-range sb-icn"></i>
+            <span>Make Timeseries</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "glts" ? "active" : ""}`}
-            to="/get-linear-trend-shapefile"
+            className={`sb-link ${idx === 5 ? "active" : ""}`}
+            to="/get-lts"
           >
-            <i className="bi bi-filetype-sh shi-icon"></i>
-            <span className="shi-title">Get Linear Trend Shapefile</span>
+            <i className="bi bi-filetype-sh sb-icn"></i>
+            <span>Get Linear Trend Shapefile</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "pt" ? "active" : ""}`}
+            className={`sb-link ${idx === 6 ? "active" : ""}`}
             to="/project-timeseries"
           >
-            <i className="bi bi-hourglass shi-icon"></i>
-            <span className="shi-title">Project Timeseries</span>
+            <i className="bi bi-hourglass sb-icn"></i>
+            <span>Project Timeseries</span>
           </Link>
+        </li>
+        <li>
           <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "mp" ? "active" : ""}`}
+            className={`sb-link ${idx === 7 ? "active" : ""}`}
             to="/merge-projections"
           >
-            <i className="bi bi-intersect shi-icon"></i>
-            <span className="shi-title">Merge Projections</span>
+            <i className="bi bi-intersect sb-icn"></i>
+            <span>Merge Projections</span>
           </Link>
-          <Link
-            onClick={() => setSideBar(false)}
-            className={`sh-item ${current === "rem" ? "active" : ""}`}
-            to="/retraining-extraction-model"
-          >
-            <i className="bi bi-arrow-clockwise shi-icon"></i>
-            <span className="shi-title">Retraining Extraction Model</span>
+        </li>
+        <li>
+          <Link className={`sb-link ${idx === 8 ? "active" : ""}`} to="/rexm">
+            <i className="bi bi-arrow-clockwise sb-icn"></i>
+            <span>Retraining Extraction Model</span>
           </Link>
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 };

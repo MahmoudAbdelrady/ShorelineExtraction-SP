@@ -1,46 +1,68 @@
-label {
-  font-size: 18px;
+.input-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.input-field.f-ip span {
+  margin-right: 10px;
+  color: #191919;
+  font-weight: bold;
+}
+.input-field.f-ip input {
+  display: none;
+}
+.input-field.f-ip label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #0075ff;
+  color: #fff;
+  transition: 0.3s;
+  overflow: hidden;
+  cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  color: #1e88e5;
+}
+.input-field.f-ip label:hover {
+  background-color: #0d69d5;
+}
+.input-field.f-ip label i {
+  position: relative;
   margin-right: 10px;
-  text-align: center;
-  user-select: none;
+  z-index: 2;
 }
-
-input[type=text], input[type=number] {
-  padding: 3px;
-  border: none;
-  background-color: #eeeeee;
-  border-radius: 10px;
-  caret-color: #ff9800;
+.input-field.f-ip label span {
+  color: #fff;
+  margin-right: 0;
+  font-weight: normal;
+  position: relative;
+  z-index: 2;
 }
-input[type=date] {
-  padding: 7px;
-  border-radius: 10px;
-  border: none;
-  background-color: #eeeeee;
-  color: #797979;
-  font-size: 18px;
+.input-field:not(.f-ip) label {
+  margin-right: 10px;
+  color: #191919;
+  font-weight: bold;
 }
-input[type=text] {
-  height: 35px;
-  width: 300px;
+.input-field:not(.f-ip) input:not([type=checkbox]) {
+  padding: 5px;
+  caret-color: #0075ff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: #eee;
+  color: #191919;
+  transition: 0.3s;
 }
-input[type=number] {
-  width: 100px;
-  height: 35px;
+.input-field:not(.f-ip) input:not([type=checkbox]):hover {
+  border-color: #0075ff;
 }
-input[type=checkbox] {
-  border-color: #777;
+.input-field:not(.f-ip) input[type=checkbox] {
+  border-color: #bebebe;
+  cursor: pointer;
+  transition: 0.3s;
 }
-input[type=checkbox]:checked {
-  border: none;
-}
-input::-moz-placeholder {
-  color: #bcbcbc;
-}
-input::placeholder {
-  color: #bcbcbc;
+.input-field:not(.f-ip) input[type=checkbox]:hover, .input-field:not(.f-ip) input[type=checkbox]:checked {
+  border-color: #0075ff;
 }/*# sourceMappingURL=inputfield.css.map */

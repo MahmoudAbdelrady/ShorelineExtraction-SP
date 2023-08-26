@@ -1,12 +1,40 @@
 import "./header.css";
 import { Link } from "react-router-dom";
-const Header = () => {
+const Header = ({ idx }) => {
   return (
     <div className="header">
-      <Link to="/" className="h-link">
-        <img src="./images/satellite.png" alt="Logo" />
-        <span className="title">Shoreline GAN</span>
-      </Link>
+      <div className="left-section">
+        <div className="logos">
+          <img src="./images/logo1.png" alt="Logo1" />
+          <img src="./images/logo2.png" alt="Logo2" />
+        </div>
+        <div className="site-name">
+          National Authority for Remote Sensing & Space Sciences
+        </div>
+      </div>
+      <div className="middle-section">Shoreline Extraction Summer Project</div>
+      <div className="right-section">
+        <ul className="links">
+          <li>
+            <Link to="/" className={idx === 1 ? "active" : ""}>
+              <i className="bi bi-house-fill"></i>
+              <span>Home</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/stats-analysis" className={idx === 2 ? "active" : ""}>
+              <i className="bi bi-graph-down"></i>
+              <span>Statistical Analysis</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/about-us" className={idx === 3 ? "active" : ""}>
+              <i className="bi bi-people-fill"></i>
+              <span>About Us</span>
+            </Link>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 };
