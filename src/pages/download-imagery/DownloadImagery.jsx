@@ -77,22 +77,34 @@ const DownloadImagery = () => {
             <div className="sats">
               <input type="checkbox" name="ss" id="s2" />
               <label htmlFor="s2" className="sat">
-                <img src="./images/sentinel2.png" alt="Sentinel2" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037704/sentinel2_eftpah.png"
+                  alt="Sentinel2"
+                />
                 <span className="sat-title">Sentinel 2</span>
               </label>
               <input type="checkbox" name="ss" id="l5" />
               <label htmlFor="l5" className="sat">
-                <img src="./images/landsat5.png" alt="Landsat5" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037700/landsat5_nwztkf.png"
+                  alt="Landsat5"
+                />
                 <span className="sat-title">Landsat 5</span>
               </label>
               <input type="checkbox" name="ss" id="l7" />
               <label htmlFor="l7" className="sat">
-                <img src="./images/landsat5.png" alt="Landsat5" />
-                <span className="sat-title">Landsat 5</span>
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/landsat7_l9t76d.png"
+                  alt="Landsat7"
+                />
+                <span className="sat-title">Landsat 7</span>
               </label>
               <input type="checkbox" name="ss" id="l8" />
               <label htmlFor="l8" className="sat">
-                <img src="./images/landsat8.png" alt="Landsat8" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/landsat8_hmceat.png"
+                  alt="Landsat8"
+                />
                 <span className="sat-title">Landsat 8</span>
               </label>
             </div>

@@ -299,7 +299,7 @@ const GoogleMap = () => {
           <div className="img-container">
             <span className="title">Map</span>
             <img
-              src="./images/mapTheme.png"
+              src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037702/mapTheme_f86wqh.png"
               alt="MapTheme"
               className={`map-theme ${activeTheme === "map" ? "active" : ""}`}
               onClick={() => {
@@ -324,7 +324,7 @@ const GoogleMap = () => {
           <div className="img-container">
             <span className="title">Satellite</span>
             <img
-              src="./images/satTheme.png"
+              src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037703/satTheme_dvdkbt.png"
               alt="SatTheme"
               className={`sat-theme ${activeTheme === "sat" ? "active" : ""}`}
               onClick={() => {

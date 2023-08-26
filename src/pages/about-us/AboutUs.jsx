@@ -12,7 +12,10 @@ const AboutUs = () => {
           <div className="dteam container">
             <div className="dt-box">
               <div className="data">
-                <img src="./images/avatar.jpg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/avatar_ynalko.png"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/mahmoud-abdelrady-47bbb9219/"
@@ -30,7 +33,10 @@ const AboutUs = () => {
             </div>
             <div className="dt-box">
               <div className="data">
-                <img src="./images/avatar.jpg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/avatar_ynalko.png"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/assem-ihab-5b8b57230"
@@ -48,7 +54,10 @@ const AboutUs = () => {
             </div>
             <div className="dt-box">
               <div className="data">
-                <img src="./images/g-avatar.jpeg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/g-avatar_wcapfp.jpg"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/asma%C3%A0-mahmoud-059516227"
@@ -66,7 +75,10 @@ const AboutUs = () => {
             </div>
             <div className="dt-box">
               <div className="data">
-                <img src="./images/g-avatar.jpeg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/g-avatar_wcapfp.jpg"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/nour-hamdy-a33990228"
@@ -84,7 +96,10 @@ const AboutUs = () => {
             </div>
             <div className="dt-box">
               <div className="data">
-                <img src="./images/g-avatar.jpeg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/g-avatar_wcapfp.jpg"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/sama-aboelala-7917081b9"
@@ -102,7 +117,10 @@ const AboutUs = () => {
             </div>
             <div className="dt-box">
               <div className="data">
-                <img src="./images/g-avatar.jpeg" alt="Avatar" />
+                <img
+                  src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/g-avatar_wcapfp.jpg"
+                  alt="Avatar"
+                />
                 <div className="socials">
                   <Link
                     to="https://www.linkedin.com/in/sohaila-abd-el-nasser-8971b7244"

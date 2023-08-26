@@ -15,7 +15,10 @@ const Sidebar = ({ idx }) => {
         class="bi bi-caret-left-fill close-icn"
       ></i>
       <div className="nsbh">
-        <img src="./images/satellite.png" alt="Logo" />
+        <img
+          src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037702/satellite_unvfd4.png"
+          alt="Logo"
+        />
         <h3>Menu</h3>
       </div>
       <ul className="links">

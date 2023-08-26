@@ -5,8 +5,14 @@ const Header = ({ idx }) => {
     <div className="header">
       <div className="left-section">
         <div className="logos">
-          <img src="./images/logo1.png" alt="Logo1" />
-          <img src="./images/logo2.png" alt="Logo2" />
+          <img
+            src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/logo1_yowyjq.png"
+            alt="Logo1"
+          />
+          <img
+            src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037701/logo2_bivga8.png"
+            alt="Logo2"
+          />
         </div>
         <div className="site-name">
           National Authority for Remote Sensing & Space Sciences
