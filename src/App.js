@@ -1,4 +1,4 @@
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
 import Footer from "./components/Footer/footer";
 import DownloadImagery from "./pages/download-imagery/DownloadImagery";
@@ -13,7 +13,7 @@ import AboutUs from "./pages/about-us/AboutUs";
 import StatsAnalysis from "./pages/stats-analysis/StatsAnalysis";
 function App() {
   return (
-    <HashRouter hashType="noslash">
+    <BrowserRouter basename="/ShorelineExtraction-SP">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stats-analysis" element={<StatsAnalysis />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/rexm" element={<Rexm />} />
       </Routes>
       <Footer />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
