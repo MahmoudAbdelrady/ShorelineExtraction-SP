@@ -13,7 +13,7 @@ import AboutUs from "./pages/about-us/AboutUs";
 import StatsAnalysis from "./pages/stats-analysis/StatsAnalysis";
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="/ShorelineExtraction-SP">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/stats-analysis" element={<StatsAnalysis />} />
