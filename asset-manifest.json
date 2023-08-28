@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/ShorelineExtraction-SP/static/css/main.b2ba2e3a.css",
-    "main.js": "/ShorelineExtraction-SP/static/js/main.295a8c5b.js",
+    "main.css": "/ShorelineExtraction-SP/static/css/main.15981f11.css",
+    "main.js": "/ShorelineExtraction-SP/static/js/main.88ac7174.js",
     "static/media/bootstrap-icons.woff?": "/ShorelineExtraction-SP/static/media/bootstrap-icons.4753c5ba57962b4d7bf8.woff",
     "static/media/bootstrap-icons.woff2?": "/ShorelineExtraction-SP/static/media/bootstrap-icons.6d63d0501e5ed7b79dab.woff2",
     "index.html": "/ShorelineExtraction-SP/index.html",
-    "main.b2ba2e3a.css.map": "/ShorelineExtraction-SP/static/css/main.b2ba2e3a.css.map",
-    "main.295a8c5b.js.map": "/ShorelineExtraction-SP/static/js/main.295a8c5b.js.map"
+    "main.15981f11.css.map": "/ShorelineExtraction-SP/static/css/main.15981f11.css.map",
+    "main.88ac7174.js.map": "/ShorelineExtraction-SP/static/js/main.88ac7174.js.map"
   },
   "entrypoints": [
-    "static/css/main.b2ba2e3a.css",
-    "static/js/main.295a8c5b.js"
+    "static/css/main.15981f11.css",
+    "static/js/main.88ac7174.js"
   ]
 }
