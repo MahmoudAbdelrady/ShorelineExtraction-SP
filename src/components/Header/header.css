@@ -1,6 +1,5 @@
 .header {
   height: 80px;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,6 +20,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 15px;
 }
 .header .left-section .logos {
   display: flex;
@@ -43,7 +43,6 @@
           user-select: none;
 }
 .header .middle-section {
-  margin-right: 15px;
   font-size: 25px;
   font-weight: bold;
   -webkit-user-select: none;
@@ -51,30 +50,52 @@
           user-select: none;
 }
 .header .right-section {
-  margin-right: 20px;
+  height: 100%;
+  margin-right: 10px;
 }
 .header .right-section .links {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 30px;
+  gap: 0 10px;
+  height: 100%;
+}
+.header .right-section .links li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  transition: 0.3s;
+}
+.header .right-section .links li::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: #0075ff;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.header .right-section .links li.active, .header .right-section .links li:hover:not(.active) {
+  background-color: #fafafa;
+}
+.header .right-section .links li.active a, .header .right-section .links li:hover:not(.active) a {
+  color: #0075ff;
+}
+.header .right-section .links li.active::after, .header .right-section .links li:hover:not(.active)::after {
+  width: 100%;
 }
 .header .right-section .links li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  padding: 0 10px;
   gap: 0 8px;
-  padding: 5px 12px;
-  background-color: #eee;
-  border-radius: 10px;
-  color: #adadad;
+  color: #191919;
+  font-size: 18px;
+  font-weight: bold;
   transition: 0.3s;
-}
-.header .right-section .links li a:hover:not(.active) {
-  background-color: rgba(0, 117, 255, 0.6);
-  color: #fff;
-}
-.header .right-section .links li a.active {
-  background-color: #0075ff;
-  color: #fff;
 }/*# sourceMappingURL=header.css.map */

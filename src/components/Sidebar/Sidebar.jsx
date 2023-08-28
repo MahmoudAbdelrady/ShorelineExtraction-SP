@@ -1,25 +1,15 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
 import "./sidebar.css";
 
 const Sidebar = ({ idx }) => {
-  var [sideBar, setSideBar] = useState(true);
   return (
-    <div className={`sidebar ${sideBar}`}>
-      <i
-        onClick={() => setSideBar((prev) => !prev)}
-        className="bi bi-caret-right-fill open-icn"
-      ></i>
-      <i
-        onClick={() => setSideBar((prev) => !prev)}
-        class="bi bi-caret-left-fill close-icn"
-      ></i>
+    <div className="sidebar">
       <div className="nsbh">
         <img
           src="https://res.cloudinary.com/dem8fwqbk/image/upload/v1693037702/satellite_unvfd4.png"
           alt="Logo"
         />
-        <h3>Menu</h3>
+        <h3>Shoreline Extraction SP</h3>
       </div>
       <ul className="links">
         <li>

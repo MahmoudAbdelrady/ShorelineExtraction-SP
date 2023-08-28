@@ -30,7 +30,7 @@ const Rexm = () => {
               id={"rexm-ctn"}
               type={"text"}
             />
-            <SubmitButton title={"Run"} />
+            <SubmitButton title={"Run"} icon={"bi bi-gear-wide-connected"} />
           </form>
         </div>
         <GoogleMap />

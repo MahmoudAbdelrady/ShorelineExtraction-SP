@@ -4,11 +4,11 @@
 
 .mp-items {
   .input-field {
-    &:nth-child(4) {
-      gap: 7px;
+    &:nth-child(2) {
+      width: calc(100% - 70px) !important;
     }
-    &:nth-child(5) {
-      gap: 18px;
-    }
+  }
+  .submit-btn {
+    justify-content: space-evenly;
   }
 }

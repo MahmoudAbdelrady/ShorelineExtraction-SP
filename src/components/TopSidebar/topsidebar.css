@@ -10,7 +10,7 @@
   scroll-behavior: smooth;
 }
 .top-sidebar::-webkit-scrollbar {
-  height: 3px;
+  height: 5px;
 }
 .top-sidebar::-webkit-scrollbar-track {
   background-color: #f1f5f9;

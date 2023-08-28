@@ -25,7 +25,10 @@ const GetLTS = () => {
               type={"number"}
             />
             <InputField title={"EPSG Code:"} id={"glts-epc"} type={"text"} />
-            <SubmitButton title={"Make Linear Trends Shapefile"} />
+            <SubmitButton
+              title={"Make Linear Trends Shapefile"}
+              icon={"bi bi-file-earmark-break"}
+            />
           </form>
         </div>
         <GoogleMap />

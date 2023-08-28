@@ -2,11 +2,3 @@
 @use "../../scss/mixins/sidesection" as *;
 
 @include sideSection(get-lts, glts-info, glts-items);
-.input-field {
-  &:nth-child(1) {
-    gap: 21px;
-  }
-  &:nth-child(4) {
-    gap: 18px;
-  }
-}

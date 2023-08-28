@@ -29,7 +29,7 @@ const MakeTransects = () => {
               type={"file"}
               classes={"f-ip"}
             />
-            <SubmitButton title={"Start"} />
+            <SubmitButton title={"Start"} icon={"bi bi-play-circle"} />
           </form>
         </div>
         <GoogleMap />

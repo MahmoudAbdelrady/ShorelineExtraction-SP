@@ -5,30 +5,9 @@
 
 .se-items {
   .input-field {
-    &:nth-child(1) {
-      label {
-        margin-right: 15px;
-      }
-    }
-    &:nth-child(2) {
-      label {
-        margin-right: 31px;
-      }
-    }
-    &:nth-child(3) {
-      label {
-        margin-right: 60px;
-      }
-    }
-    &:nth-child(4) {
-      label {
-        margin-right: 24px;
-      }
-    }
+    &:nth-child(5),
     &:nth-child(6) {
-      label {
-        margin-right: 26.8px;
-      }
+      width: calc(100% - 80px) !important;
     }
   }
 }

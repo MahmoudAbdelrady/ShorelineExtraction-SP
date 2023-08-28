@@ -24,7 +24,10 @@ const MakeTimeseries = () => {
               id={"mti-si"}
               type={"number"}
             />
-            <SubmitButton title={"Create Timeseries"} />
+            <SubmitButton
+              title={"Create Timeseries"}
+              icon={"bi bi-calendar2-check"}
+            />
           </form>
         </div>
         <GoogleMap />

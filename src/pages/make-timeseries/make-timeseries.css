@@ -4,7 +4,7 @@
   display: flex;
 }
 .make-timeseries .mti-info {
-  width: 300px;
+  width: 350px;
   background-color: #fff;
   border-right: 1px solid #e9e9e9;
   transition: 0.3s;
@@ -13,7 +13,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  height: calc(100vh - 216.2px);
+  height: calc(100vh - 218.5px);
   overflow-y: auto;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -21,7 +21,7 @@
   padding-left: 10px;
 }
 .make-timeseries .mti-info .mti-items::-webkit-scrollbar {
-  width: 5px;
+  width: 6px;
 }
 .make-timeseries .mti-info .mti-items::-webkit-scrollbar-track {
   background-color: #f1f5f9;
@@ -31,7 +31,11 @@
   background-color: #0075ff;
   border-radius: 0 0 10px 10px;
 }
+.make-timeseries .mti-info .mti-items .input-field {
+  width: 100%;
+  justify-content: space-between;
+}
 
-.mti-items .input-field:nth-child(1) input {
-  width: 193px;
+.mti-items .input-field:nth-child(2) {
+  width: calc(100% - 70px) !important;
 }/*# sourceMappingURL=make-timeseries.css.map */

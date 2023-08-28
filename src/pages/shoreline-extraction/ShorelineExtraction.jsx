@@ -31,7 +31,10 @@ const ShorelineExtraction = () => {
               id={"dt"}
               type={"number"}
             />
-            <SubmitButton title={"Run and Process"} />
+            <SubmitButton
+              title={"Run and Process"}
+              icon={"bi bi-gear-wide-connected"}
+            />
           </form>
         </div>
         <GoogleMap />

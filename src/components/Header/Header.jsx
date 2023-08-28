@@ -21,20 +21,20 @@ const Header = ({ idx }) => {
       <div className="middle-section">Shoreline Extraction Summer Project</div>
       <div className="right-section">
         <ul className="links">
-          <li>
-            <Link to="/" className={idx === 1 ? "active" : ""}>
+          <li className={idx === 1 ? "active" : ""}>
+            <Link to="/">
               <i className="bi bi-house-fill"></i>
               <span>Home</span>
             </Link>
           </li>
-          <li>
-            <Link to="/stats-analysis" className={idx === 2 ? "active" : ""}>
+          <li className={idx === 2 ? "active" : ""}>
+            <Link to="/stats-analysis">
               <i className="bi bi-graph-down"></i>
               <span>Statistical Analysis</span>
             </Link>
           </li>
-          <li>
-            <Link to="/about-us" className={idx === 3 ? "active" : ""}>
+          <li className={idx === 3 ? "active" : ""}>
+            <Link to="/about-us">
               <i className="bi bi-people-fill"></i>
               <span>About Us</span>
             </Link>

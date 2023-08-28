@@ -57,7 +57,7 @@ const ProjectTimeseries = () => {
                 <option value="yearly">Yearly</option>
               </select>
             </div>
-            <SubmitButton title={"Run"} />
+            <SubmitButton title={"Run"} icon={"bi bi-gear-wide-connected"} />
           </form>
         </div>
         <GoogleMap />

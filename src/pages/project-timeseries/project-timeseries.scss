@@ -4,15 +4,8 @@
 @include sideSection(project-timeseries, pt-info, pt-items);
 
 .pt-items {
-  .input-field {
-    &:nth-child(4) {
-      gap: 38px;
-    }
-    &:nth-child(5) {
-      gap: 16px;
-    }
-  }
   .select-field {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,9 +13,10 @@
     span {
       color: $darkColor;
       font-weight: bold;
+      user-select: none;
     }
     select {
-      padding: 5px;
+      padding: 3px 6px;
       caret-color: $blueColor;
       border: 2px solid transparent;
       border-radius: 10px;
@@ -33,5 +27,8 @@
         border-color: $blueColor;
       }
     }
+  }
+  .submit-btn {
+    justify-content: space-evenly;
   }
 }

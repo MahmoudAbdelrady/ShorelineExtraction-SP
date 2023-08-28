@@ -2,7 +2,6 @@
 
 .header {
   height: 80px;
-  padding: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -20,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
     .logos {
       display: flex;
       flex-direction: column;
@@ -40,37 +40,57 @@
     }
   }
   .middle-section {
-    margin-right: 15px;
     font-size: 25px;
     font-weight: bold;
     user-select: none;
   }
   .right-section {
-    margin-right: 20px;
+    height: 100%;
+    margin-right: 10px;
     .links {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 0 30px;
+      gap: 0 10px;
+      height: 100%;
       li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        transition: 0.3s;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 3px;
+          background-color: $blueColor;
+          top: 0;
+          left: 0;
+          transition: 0.3s;
+        }
+        &.active,
+        &:hover:not(.active) {
+          background-color: #fafafa;
+          a {
+            color: $blueColor;
+          }
+          &::after {
+            width: 100%;
+          }
+        }
         a {
           display: flex;
           justify-content: center;
           align-items: center;
+          height: 100%;
+          padding: 0 10px;
           gap: 0 8px;
-          padding: 5px 12px;
-          background-color: #eee;
-          border-radius: 10px;
-          color: #adadad;
+          color: $darkColor;
+          font-size: 18px;
+          font-weight: bold;
           transition: 0.3s;
-          &:hover:not(.active) {
-            background-color: rgba($blueColor, 60%);
-            color: #fff;
-          }
-          &.active {
-            background-color: $blueColor;
-            color: #fff;
-          }
         }
       }
     }

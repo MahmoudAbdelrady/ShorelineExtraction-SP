@@ -30,7 +30,7 @@ const MergeProjections = () => {
               type={"number"}
             />
             <InputField title={"EPSG Code:"} id={"mp-epc"} type={"text"} />
-            <SubmitButton title={"Run"} />
+            <SubmitButton title={"Run"} icon={"bi bi-gear-wide-connected"} />
           </form>
         </div>
         <GoogleMap />

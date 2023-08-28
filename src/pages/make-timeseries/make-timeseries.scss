@@ -4,10 +4,8 @@
 @include sideSection(make-timeseries, mti-info, mti-items);
 .mti-items {
   .input-field {
-    &:nth-child(1) {
-      input {
-        width: 193px;
-      }
+    &:nth-child(2) {
+      width: calc(100% - 70px) !important;
     }
   }
 }

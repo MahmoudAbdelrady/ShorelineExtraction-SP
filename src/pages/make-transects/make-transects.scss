@@ -4,11 +4,7 @@
 @include sideSection(make-transects, mt-info, mt-items);
 
 .mt-items {
-  .input-field {
-    &:nth-child(1) {
-      label {
-        margin-right: 6px;
-      }
-    }
+  .submit-btn {
+    justify-content: space-evenly;
   }
 }

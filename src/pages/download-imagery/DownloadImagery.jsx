@@ -108,7 +108,7 @@ const DownloadImagery = () => {
                 <span className="sat-title">Landsat 8</span>
               </label>
             </div>
-            <SubmitButton title={"Start Download"} />
+            <SubmitButton title={"Start Download"} icon={"bi bi-download"} />
           </form>
         </div>
         <GoogleMap />

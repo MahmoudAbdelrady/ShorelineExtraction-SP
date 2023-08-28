@@ -7,7 +7,7 @@ const InputField = ({ title, id, type, placeholder, classes }) => {
         <>
           <span>{title}</span>
           <label htmlFor={id}>
-            <i className="bi bi-upload"></i>
+            <i className="bi bi-file-earmark-arrow-up"></i>
             <span>Upload</span>
           </label>
           <input type={type} id={id} />
