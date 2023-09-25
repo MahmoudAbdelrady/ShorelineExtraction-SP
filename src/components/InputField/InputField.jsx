@@ -1,6 +1,6 @@
 import "./inputfield.css";
 
-const InputField = ({ title, id, type, placeholder, classes }) => {
+const InputField = ({ title, id, type, placeholder, classes, value, onCh }) => {
   return (
     <div className={`input-field ${classes}`}>
       {type === "file" ? (
@@ -20,6 +20,8 @@ const InputField = ({ title, id, type, placeholder, classes }) => {
             id={id}
             placeholder={placeholder}
             className={`${type === "checkbox" ? "form-check-input" : ""}`}
+            value={value}
+            onChange={onCh}
           />
         </>
       )}
